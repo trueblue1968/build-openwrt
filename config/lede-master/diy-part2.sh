@@ -29,7 +29,7 @@ echo "DISTRIB_SOURCECODE='lede'" >>package/base-files/files/etc/openwrt_release
 # ------------------------------- Other started -------------------------------
 #
 # Add luci-app-amlogic
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+# svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
 
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
@@ -38,7 +38,8 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/{containerd,libnetwork,runc,tini} feeds/packages/utils
-
+svn co https://github.com/xiaorouji/openwrt-passwall2/releases/download/1.30-3/luci-19.07_luci-i18n-passwall2-zh-cn_git-24.199.67083-83558f5_all.ipk
+svn co https://github.com/vernesong/OpenClash/releases/download/v0.46.014-beta/luci-app-openclash_0.46.014-beta_all.ipk
 # Add third-party software packages (The entire repository)
 # git clone https://github.com/libremesh/lime-packages.git package/lime-packages
 # Add third-party software packages (Specify the package)
